@@ -59,3 +59,5 @@ while extra_cheese not in ["y", "n"]:
 if extra_cheese == "y":
     total_harga += 13_636
     extra_cheese =True
+elif extra_cheese == "n":
+    extra_cheese = False
