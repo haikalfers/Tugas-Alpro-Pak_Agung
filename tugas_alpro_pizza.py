@@ -65,6 +65,21 @@ if pilihCrust in menuCrust:
                     total_harga += 0
                 else:
                     print("Maaf, Kamu tidak memilih apapun")
+            elif ukuran == "Large":
+                total_harga += 132_738
+                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
+                if keju == "ya":
+                    total_harga += 13_636
+                elif keju == "tidak":
+                    total_harga += 0
+                else:
+                    print("Maaf, Kamu tidak memilih apapun")
+
+            else:
+                print("Sorry, You dont choose anything")
+else:
+            print("Maaf, Crust yang kamu pilih tidak ada")
+    
                     
 print("\nTerima Kasih telah membeli di Pizza Hut")
 print(f"Pesanan Anda\nPizza Dengan Topping {topping_pizza}")
