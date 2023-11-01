@@ -83,6 +83,7 @@ else:
                     
 print("\nTerima Kasih telah membeli di Pizza Hut")
 print(f"Pesanan Anda\nPizza Dengan Topping {topping_pizza}")
-print(f"Crust/Pinggiran {crust_pizza} dan")
-print(f"{'dengan'if extra_cheese else 'tanpa'} Tambahan Keju")
-print(f"Total Bill anda adalah {total_harga}")
+print(f"Crust/Pinggiran nomor {pilihCrust}")
+print("Jadi untuk seluruhnya")
+print(f"Total Bill anda adalah Rp{total_harga}")
+print("Silahkan Bayar Bill kamu di kasir, TERIMA KASIH!!!")
