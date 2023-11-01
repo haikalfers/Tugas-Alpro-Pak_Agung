@@ -61,3 +61,7 @@ if extra_cheese == "y":
     extra_cheese =True
 elif extra_cheese == "n":
     extra_cheese = False
+    
+print("\nTerima Kasih telah membeli di Pizza Hut")
+print(f"Pesanan Anda\nPizza Dengan Topping {topping_pizza}")
+print(f"Crust/Pinggiran {crust_pizza} dan")
