@@ -1,4 +1,3 @@
-
 """
 Kelas : 2023E
 Prodi : D4 Manajemen Informatika
@@ -11,8 +10,8 @@ Anggota Kelompok
 print("WELCOME TO PIZZA HUT WIYUNG")
 print("SILAHKAN PILIH MENU")
 
-total_harga : 0
-
+total_harga = 0
+Rupiah = f"Rp {total_harga:,.0f}"
 print(
     """
     1. Frankfuter BBQ
@@ -33,57 +32,75 @@ if topping_pizza == 4:
 
 print(
     """
+    Pilih Crust/ Pinggiran Pizza yang anda mau : 
     1. Pan
     2. StuffedCrust Cheese
     3. StuffedCrust Sausage
     4. Cheesy Bites
     5. Crown Bites
     """)
-
 pilihCrust = int(input("Pilih nomor crust yang ingin kamu pilih (1-5): "))
-if pilihCrust in menuCrust:
-            crust_diPilih = menuCrust[pilihCrust]
-            print(f"Crust yang kamu pilih {crust_diPilih}")
-            ukuran = input("Pilih ukuran yang kamu inginkan:\n Personal/Regular/Large (tulis sesuai huruf besar dan kecilnya) : \n")
-            if ukuran == "Personal":
-                total_harga += 43_637
-                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
-                if keju == "ya":
-                    total_harga += 13_636
-                elif keju == "tidak":
-                    total_harga += 0
-                else:
-                    print("Maaf, Kamu tidak memilih apapun")
+ukuran = input("Pilih ukuran yang kamu inginkan:\n Personal/Regular/Large (tulis sesuai huruf besar dan kecilnya) : \n")
+if pilihCrust == 1:
+    pilihCrust = "Pan"
+    if ukuran == "Personal":
+        total_harga = 43_637
+    elif ukuran == "Regular":
+        total_harga = 100_910
+    elif ukuran == "Large":
+        total_harga = 132_728
+        
+if pilihCrust == 2:
+    pilihCrust = "StuffedCrust Cheese"
+    if ukuran == "Personal":
+        total_harga = 55_455
+    elif ukuran == "Regular":
+        total_harga = 120_910
+    elif ukuran == "Large":
+        total_harga = 160_000
 
-            elif ukuran == "Regular":
-                total_harga += 100_910
+if pilihCrust == 3:
+    pilihCrust = "StuffedCrust Sausage"
+    if ukuran == "Personal":
+        total_harga = 52_728
+    elif ukuran == "Regular":
+        total_harga = 117_273
+    elif ukuran == "Large":
+        total_harga = 155_455
 
-                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
-                if keju == "ya":
-                    total_harga += 13_636
-                elif keju == "tidak":
-                    total_harga += 0
-                else:
-                    print("Maaf, Kamu tidak memilih apapun")
-            elif ukuran == "Large":
-                total_harga += 132_738
-                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
-                if keju == "ya":
-                    total_harga += 13_636
-                elif keju == "tidak":
-                    total_harga += 0
-                else:
-                    print("Maaf, Kamu tidak memilih apapun")
-
-            else:
-                print("Sorry, You dont choose anything")
-else:
-            print("Maaf, Crust yang kamu pilih tidak ada")
+if pilihCrust == 4:
+    pilihCrust = "Cheesy Bites"
+    if ukuran == "Personal":
+        total_harga = 57_273
+    elif ukuran == "Regular":
+        total_harga = 123_637
+    elif ukuran == "Large":
+        total_harga = 164_546   
     
-                    
+if pilihCrust == 5:
+    pilihCrust = "Crown Bites"
+    if ukuran == "Personal":
+        total_harga = 55_455
+    elif ukuran == "Regular":
+        total_harga = 120_910
+    elif ukuran == "Large":
+        total_harga = 160_000    
+    
+extra_cheese = input("Apakah Anda Mau menambahkan Keju (y/n) : ").lower()
+while extra_cheese not in ["y", "n"]:
+    extra_cheese = input("Apakah Annda Mau menambahkan Keju (y/n) : ").lower()
+if extra_cheese == "y":
+    total_harga += 13_636
+    extra_cheese =True
+elif extra_cheese == "n":
+    extra_cheese = False
+
+
 print("\nTerima Kasih telah membeli di Pizza Hut")
-print(f"Pesanan Anda\nPizza Dengan Topping {topping_pizza}")
-print(f"Crust/Pinggiran nomor {pilihCrust}")
+print(f"\nPesanan Anda\nPizza Dengan Topping {topping_pizza}")
+print(f"Menggunakan Crust {pilihCrust}")
+print(f"Dengan Ukuran {ukuran}")
+print(f"{'dengan'if extra_cheese else 'tanpa'} Tambahan Keju")
 print("Jadi untuk seluruhnya")
 print(f"Total Bill anda adalah Rp{total_harga}")
-print("Silahkan Bayar Bill kamu di kasir, TERIMA KASIH!!!")
+print("\nSilahkan Bayar Bill kamu di kasir, TERIMA KASIH!!!")
