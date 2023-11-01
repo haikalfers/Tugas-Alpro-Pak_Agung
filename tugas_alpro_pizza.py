@@ -1,3 +1,4 @@
+
 """
 Kelas : 2023E
 Prodi : D4 Manajemen Informatika
@@ -7,6 +8,8 @@ Anggota Kelompok
 2. Alya Faadhilah Putri (23091397153)
 3. Haikal Ferdian Saputra (23091397154)
 """
+print("WELCOME TO PIZZA HUT WIYUNG")
+print("SILAHKAN PILIH MENU")
 
 total_harga : 0
 
