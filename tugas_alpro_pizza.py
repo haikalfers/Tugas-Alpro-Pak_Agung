@@ -21,7 +21,7 @@ print(
     4. Super Supreme Chicken
     """)
 
-topping_pizza = int(input("Pilih Topping Pizza (piih angka): "))
+topping_pizza = int(input("Pilih Topping Pizza yang diinginkan(piih angka 1-4) : "))
 if topping_pizza == 1:
     topping_pizza = "Frankfuter BBQ"
 if topping_pizza == 2:
@@ -39,7 +39,7 @@ print(
     4. Cheesy Bites
     5. Crown Bites
     """)
-crust_pizza = int(input("Pilih Crust/Pinggiran : "))
+crust_pizza = int(input("Pilih Crust/Pinggiran (piih angka 1-5) : "))
 if crust_pizza == 1:
     crust_pizza = "Pan"
     total_harga = 43_637
