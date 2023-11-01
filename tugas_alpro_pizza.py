@@ -27,3 +27,28 @@ if topping_pizza == 3:
     topping_pizza = "Super Supreme"
 if topping_pizza == 4:
     topping_pizza = "Super Supreme Chicken"
+
+print(
+    """
+    1. Pan
+    2. StuffedCrust Cheese
+    3. StuffedCrust Sausage
+    4. Cheesy Bites
+    5. Crown Bites
+    """)
+crust_pizza = int(input("Pilih Crust/Pinggiran : "))
+if crust_pizza == 1:
+    crust_pizza = "Pan"
+    total_harga = 43_637
+if crust_pizza == 2:
+    crust_pizza = "StuffedCrust Cheese"
+    total_harga = 55_455
+if crust_pizza == 3:
+    crust_pizza = "StuffedCrust Sausage"
+    total_harga = 52_728
+if crust_pizza == 4:
+    crust_pizza = "Cheesy Bites"
+    total_harga = 57_273
+if crust_pizza == 5:
+    crust_pizza = "Crown Bites"
+    total_harga = 55_455
