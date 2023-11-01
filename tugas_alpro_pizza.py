@@ -44,7 +44,16 @@ pilihCrust = int(input("Pilih nomor crust yang ingin kamu pilih (1-5): "))
 if pilihCrust in menuCrust:
             crust_diPilih = menuCrust[pilihCrust]
             print(f"Crust yang kamu pilih {crust_diPilih}")
-    
+            ukuran = input("Pilih ukuran yang kamu inginkan:\n Personal/Regular/Large (tulis sesuai huruf besar dan kecilnya) : \n")
+            if ukuran == "Personal":
+                total_harga += 43_637
+                keju = input("Ingin menambahkan Keju Extra ?:\n(ya atau tidak) :")
+                if keju == "ya":
+                    total_harga += 13_636
+                elif keju == "tidak":
+                    total_harga += 0
+                else:
+                    print("Maaf, Kamu tidak memilih apapun")
 print("\nTerima Kasih telah membeli di Pizza Hut")
 print(f"Pesanan Anda\nPizza Dengan Topping {topping_pizza}")
 print(f"Crust/Pinggiran {crust_pizza} dan")
