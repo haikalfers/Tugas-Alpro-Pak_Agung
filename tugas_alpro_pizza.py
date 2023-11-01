@@ -52,3 +52,10 @@ if crust_pizza == 4:
 if crust_pizza == 5:
     crust_pizza = "Crown Bites"
     total_harga = 55_455
+
+extra_cheese = input("Apakah Annda Mau menambahkan Keju (y/n) : ").lower()
+while extra_cheese not in ["y", "n"]:
+    extra_cheese = input("Apakah Annda Mau menambahkan Keju (y/n) : ").lower()
+if extra_cheese == "y":
+    total_harga += 13_636
+    extra_cheese =True
