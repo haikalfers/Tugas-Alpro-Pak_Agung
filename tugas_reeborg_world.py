@@ -57,7 +57,8 @@ while not at_goal():
         move()
     elif wall_in_front():
         vertical_pass()
-
+        
+#Hurdle 3
 def turn_right():
     for i in range(3):
         turn_left()
